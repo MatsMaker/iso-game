@@ -1,0 +1,50 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "@typescript-eslint/no-var-requires": [1],
+        "@typescript-eslint/ban-ts-comment": "error",
+        "semi": [2, "always", { "omitLastInOneLineBlock": true }],
+        "strict": [2, "never"],
+        "quotes": [2, "single"],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "space-before-blocks": ["error", "always"],
+        "space-in-parens": ["error", "never"],
+        "object-curly-spacing": ["error", "always"],
+        "no-unused-vars": [
+            2,
+            {
+                "vars": "local",
+                "args": "after-used"
+            }
+        ],
+        "no-use-before-define": 0,
+        "no-console": 2,
+        "no-debugger": 2,
+        "no-alert": 2,
+        "no-trailing-spaces": 2,
+        "key-spacing": [
+            2,
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "no-extra-semi": "error",
+        "no-func-assign": 2,
+        "no-invalid-regexp": 2,
+        "no-dupe-keys": 2,
+        "comma-dangle": [2, "always-multiline"]
+    }
+}
